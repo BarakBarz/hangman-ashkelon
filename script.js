@@ -97,7 +97,7 @@ class Hangman {
 
 const word = randomWords();
 
-const hangman = new Hangman(word, word.length + 2);
+let hangman = new Hangman(word, word.length + 2);
 
 function render() {
   puzzleWord.textContent = hangman.getPuzzle();
@@ -124,7 +124,7 @@ window.addEventListener('keypress', function ({ key }) {
 resetButton.addEventListener('click', function () {
   const word = randomWords();
   hangman = new Hangman(word, word.length + 3);
-  console.log(hangman);
+
   render();
 });
 
