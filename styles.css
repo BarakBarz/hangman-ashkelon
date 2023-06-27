@@ -1,0 +1,73 @@
+/* Overall Design */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #f7f7f7;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+/* Responsiveness */
+@media (max-width: 600px) {
+  /* Adjust the layout for smaller screens */
+  body {
+    padding: 10px;
+  }
+}
+
+/* Color and Typography */
+body {
+  color: #333;
+}
+
+p {
+  margin-bottom: 10px;
+}
+
+/* Game Instructions */
+#instructions {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Word Guess Section */
+#puzzle {
+  display: inline-block;
+  padding: 5px 10px;
+  background-color: #eee;
+  font-size: 24px;
+  border-radius: 5px;
+}
+
+/* Game Status */
+#status {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Guessed Letters */
+#guessed-letters {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Error Messages */
+#error-message {
+  color: red;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Hover and Active States */
+button:hover {
+  background-color: #ddd;
+  cursor: pointer;
+}
+
+button:active {
+  transform: scale(0.95);
+}
